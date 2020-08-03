@@ -4,9 +4,6 @@ go 1.14
 
 require (
 	github.com/belldata/bdx-logger v1.0.1
-	github.com/belldata/bxmessage v1.0.7 // indirect
-	github.com/belldata/bxutility v1.1.0
-	github.com/belldata/bxvalidator v1.1.4
 	github.com/go-playground/assert/v2 v2.0.1
 	github.com/go-playground/locales v0.13.0
 	github.com/go-playground/universal-translator v0.17.0

@@ -5,8 +5,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
-
-	"github.com/belldata/bxutility/conv/bytesconv"
 )
 
 type JSONAscii struct {
@@ -24,7 +22,7 @@ func (r JSONAscii) Render(w http.ResponseWriter) error {
 	}
 
 	var buffer bytes.Buffer
-	for _, r := range bytesconv.BytesToString(ret) {
+	for _, r := range bytesToString(ret) {
 		cvt := string(r)
 		if r >= 128 {
 			cvt = fmt.Sprintf("\\u%04x", int64(r))
